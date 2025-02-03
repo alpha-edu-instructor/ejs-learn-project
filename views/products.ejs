@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <h2>Популярные статьи</h2>
+    <ul>
+      <% list.forEach((element, idx) => { %>
+      <li><a href="/products/<%= idx + 1 %>"><%= element.text %></a></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
